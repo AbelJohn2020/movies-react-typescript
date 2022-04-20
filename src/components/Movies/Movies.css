@@ -1,0 +1,21 @@
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.movies {
+    width: 100%;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 24% 24% 24% 24%;
+    gap: 1.33%;
+    
+    padding: 1rem;
+}
+
+.card-movie {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

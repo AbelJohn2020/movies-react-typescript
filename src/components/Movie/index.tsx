@@ -1,5 +1,6 @@
 import React from "react";
 import { movie } from "../../App";
+import "./Movie.css";
 
 type dataMovie = {
   movie: movie;
@@ -11,7 +12,7 @@ const Movie = ({ movie }: dataMovie) => {
 
   const getColor = (vote: number) => {
     if (vote >= 8) {
-      return "green";
+      return "darkWhite";
     } else if (vote >= 5) {
       return "orange";
     } else {
@@ -20,15 +21,15 @@ const Movie = ({ movie }: dataMovie) => {
   };
 
   return (
-    <div>
+    <div className="movie">
       <img src={img_url + poster_path} alt={title} />
-      <div>
-        <h1>{title}</h1>
+      <div className="movie-info">
+        <h3 className="card-title">{title}</h3>
         <span className={getColor(vote_average)}>{vote_average}</span>
-        <div className="overviews">
-          <h3>overview</h3>
-          <span>{overview}</span>
-        </div>
+      </div>
+      <div className="overview">
+        <h3>overview</h3>
+        {overview}
       </div>
     </div>
   );
