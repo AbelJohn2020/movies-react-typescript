@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { movie } from "../../App";
+import { movie } from "../../pages/LandPage";
 import Movie from "../Movie";
 import Icons from "../UI/Icons";
 import "./Movies.css";
@@ -11,6 +11,7 @@ type movies = {
 const Movies = ({ data }: movies) => {
   const [inputValue, setInputValue] = useState<string>("");
   const [counter, setCounter] = useState<number>(0);
+  const [darkMode, setDarkMode] = useState<boolean>(false);
 
   const movies = () => {
     if (inputValue.length === 0) {

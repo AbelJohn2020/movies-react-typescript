@@ -1,5 +1,5 @@
 import React from "react";
-import { movie } from "../../App";
+import { movie } from "../../pages/LandPage";
 import "./Movie.css";
 
 type dataMovie = {
