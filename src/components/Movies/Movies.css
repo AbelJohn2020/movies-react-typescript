@@ -8,14 +8,33 @@
     width: 100%;
     box-sizing: border-box;
     display: grid;
-    grid-template-columns: 24% 24% 24% 24%;
-    gap: 1.33%;
+    grid-template-columns: 32% 32% 32%;
+    gap: 1rem;
     
-    padding: 1rem;
+    padding: 2rem 12rem;
 }
 
 .card-movie {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: yellow;
+}
+
+.pagination {
+    padding: 0;
+    margin: 1rem 2rem 4rem 2rem;
+    display: flex;
+}
+
+.prevAndNext {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 2px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+
 }

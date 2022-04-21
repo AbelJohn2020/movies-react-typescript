@@ -24,6 +24,7 @@ export type movie = {
 function App() {
   const [data, setData] = useState<movie[] | null>(null);
   const [loading, setLoading] = useState<boolean>(true);
+  const [darkMode, setDarkMode] = useState<boolean>(false);
 
   useEffect(() => {
     getMovies()
@@ -33,8 +34,6 @@ function App() {
       })
       .catch(() => typeError);
   }, []);
-
-  console.log(data);
 
   return (
     <div className="App">{loading ? <Loading /> : <Movies data={data} />}</div>
