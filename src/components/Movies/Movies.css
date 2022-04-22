@@ -2,13 +2,15 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    /* background-color: #404040; */
+    background-color: #333333;
 }
 
 .movies {
     width: 100%;
     box-sizing: border-box;
     display: grid;
-    grid-template-columns: 32% 32% 32%;
+    grid-template-columns: 24% 24% 24% 24%;
     gap: 1rem;
     
     padding: 2rem 12rem;
@@ -18,7 +20,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: yellow;
+    border-radius: 4px;
 }
 
 .pagination {
@@ -36,5 +38,8 @@
     background-color: transparent;
     cursor: pointer;
     outline: none;
+}
 
+.disabledButton {
+    display: none;
 }

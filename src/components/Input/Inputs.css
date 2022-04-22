@@ -1,0 +1,25 @@
+.form {
+    margin: 0;
+    padding: 32px;
+    background-color: #141414;
+}
+
+.box-input {
+    width: 20%;
+}
+
+.inputText {
+    width: 100%;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: #F0F0F0;
+    border-radius: 8px;
+    padding: 8px 12px;
+    background-color: #333333;
+}
+
+.inputText::placeholder {
+    color: #F0F0F0;
+}

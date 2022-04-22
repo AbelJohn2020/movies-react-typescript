@@ -5,10 +5,17 @@
     height: 100%;
     border-radius: 4px;
     box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.1);
-    background: green;
     position: relative;
     overflow: hidden;
     cursor: pointer;
+}
+
+.lightMovie {
+    background-color: #e50914;
+}
+
+.darkMovie {
+    background-color: #5A5A5A;
 }
 
 .movie img {
@@ -28,23 +35,23 @@
     margin-top:  0;
 }
 
-.movie-info span {
-    background: red;
+.stats {
     padding: 0.25rem 0.5rem;
     border-radius: 4px;
-    font-weight: bold;
-}
-
-.movie-info span.darkWhite {
+    font-weight: 900;
+    font-size: 20px;
+    position: absolute;
+    top: 2%;
+    left: 2%;
     color: #F0F0F0;
 }
 
-.movie-info span.orange {
-    color: orange;
+.lightSpan {
+    background-color: #e50914;
 }
 
-.movie-info span.red {
-    color: #e50914;
+.darkSpan {
+    background-color: #404040;
 }
 
 .overview {
@@ -52,7 +59,8 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #E0E0E0;
+    background-color: #404040;
+    color: #F0F0F0;
     padding: 1rem;
     max-height: 100%;
     transform: translateY(101%);
@@ -61,4 +69,9 @@
 
 .movie:hover .overview{
     transform: translateY(0);
+}
+
+.title {
+    font-size: 16px;
+    color: #F0F0F0;
 }
