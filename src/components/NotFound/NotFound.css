@@ -1,0 +1,27 @@
+.card {
+    padding: 8rem 12rem;
+    display: flex;
+    flex-direction: column;
+    color: #F0F0F0;
+}
+
+.search {
+    margin-bottom: 8rem;
+}
+
+.search h1 {
+    font-size: 28px;
+    margin-bottom: 1rem;
+}
+
+.message {
+    font-size: 16px;
+}
+
+.message div {
+    margin-bottom: 8px;
+}
+
+.message p {
+    margin-bottom: 4px;
+}

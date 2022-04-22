@@ -1,4 +1,6 @@
 .main {
+    box-sizing: border-box;
+    min-height: 618px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
